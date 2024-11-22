@@ -1,0 +1,141 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; 
+  color: #e0e0e0; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); 
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02); 
+}
+
+
+h2 {
+  font-size: 34px;
+  color: #bb86fc; 
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #2b2b2b; 
+  padding: 18px;
+  margin: 8px 0;
+  border: 1px solid #444;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #383838; 
+  transform: scale(1.05); 
+}
+
+a {
+  text-decoration: none;
+  color: #bb86fc;
+  font-weight: bold;
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+}
+
+input[type="submit"] {
+  background-color: #6200ea;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #3700b3; 
+}
+
+.quiz-form input[type="submit"] {
+  margin-top: 20px;
+}
+
+.quiz-result {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  font-size: 1.4em;
+  border: 2px solid #6200ea;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%; 
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 28px; 
+  }
+
+  li {
+    padding: 12px;
+    margin: 5px 0;
+  }
+
+  input[type="submit"] {
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  .quiz-result {
+    font-size: 1.2em;
+  }
+}
